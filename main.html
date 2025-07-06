@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Himanshu Sinha | Technical Specialist Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    if (localStorage.getItem("theme") === "dark") {
+      document.documentElement.classList.add("dark");
+    }
+    function toggleDarkMode() {
+      document.documentElement.classList.toggle('dark');
+      localStorage.setItem("theme", document.documentElement.classList.contains('dark') ? "dark" : "light");
+    }
+  </script>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen">
+
+  <!-- Header -->
+  <header class="bg-blue-700 dark:bg-blue-900 text-white p-6 flex justify-between items-center">
+    <div>
+      <h1 class="text-3xl font-bold">Himanshu Sinha</h1>
+      <p class="text-sm">Technical Specialist | IT Helpdesk | Cloud Support</p>
+    </div>
+    <button onclick="toggleDarkMode()" class="bg-white text-blue-700 px-4 py-2 rounded hover:bg-gray-200">
+      Toggle Dark Mode
+    </button>
+  </header>
+
+  <!-- About -->
+  <section class="max-w-4xl mx-auto p-6">
+    <h2 class="text-2xl font-semibold mb-4">About Me</h2>
+    <p>
+      I'm an IT Specialist with over 2 years of experience in technical support, cloud platforms, and helpdesk operations.
+      I solve problems with empathy, patience, and a commitment to service excellence. I'm now looking to grow into global-facing IT support or DevOps roles.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section class="bg-white dark:bg-gray-800 p-6 max-w-4xl mx-auto mt-6 rounded shadow">
+    <h2 class="text-2xl font-semibold mb-4">Skills</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <ul class="list-disc ml-6">
+        <li>Windows/Linux OS Support</li>
+        <li>Networking (TCP/IP, DNS, DHCP)</li>
+        <li>Remote Tools (AnyDesk, RDP, Citrix)</li>
+        <li>Office 365 & Active Directory</li>
+      </ul>
+      <ul class="list-disc ml-6">
+        <li>AWS Basics (EC2, S3, IAM)</li>
+        <li>Incident Management (ITIL)</li>
+        <li>Ticketing Tools (ServiceNow, Freshdesk)</li>
+        <li>Customer-Centric Communication</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="p-6 max-w-4xl mx-auto mt-6">
+    <h2 class="text-2xl font-semibold mb-4">Experience</h2>
+    <div class="mb-4">
+      <h3 class="font-semibold">Senior Analyst – HCLTech</h3>
+      <p class="text-sm text-gray-600 dark:text-gray-400">May 2025 – Present</p>
+      <p>Supporting US-based insurance operations, resolving technical tickets, remote troubleshooting, and policy software assistance.</p>
+    </div>
+    <div>
+      <h3 class="font-semibold">Global Helpdesk – Owens & Minor</h3>
+      <p class="text-sm text-gray-600 dark:text-gray-400">May 2023 – March 2025</p>
+      <p>Handled Tier 1/2 tickets, VPN/Outlook issues, software installation, and network diagnostics.</p>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section class="bg-white dark:bg-gray-800 p-6 max-w-4xl mx-auto mt-6 rounded shadow">
+    <h2 class="text-2xl font-semibold mb-4">Certifications</h2>
+    <ul class="list-disc ml-6">
+      <li>ITIL v4 (in progress)</li>
+      <li>CompTIA A+ (Planned)</li>
+      <li>AWS Cloud Practitioner (Learning)</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <footer class="text-center p-6 mt-10 border-t border-gray-300 dark:border-gray-700">
+    <p>Email: <a href="mailto:hsinha325@gmail.com" class="text-blue-600 dark:text-blue-400">hsinha325@gmail.com</a></p>
+    <p>LinkedIn: <a href="#" class="text-blue-600 dark:text-blue-400">linkedin.com/in/himanshu</a></p>
+    <p>Location: India | Open to Remote & Relocation</p>
+  </footer>
+
+</body>
+</html>
